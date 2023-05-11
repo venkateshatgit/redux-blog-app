@@ -1,0 +1,16 @@
+.posts{
+    width: 60vw;
+}
+.post-style{
+    margin-top: 20px;
+    padding: 20px 10px;
+    border: solid 1px;
+    border-radius: 8px;
+}
+
+.post-style h1{
+    margin: 0;
+}
+
+.post-style p{
+}
