@@ -1,9 +1,11 @@
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import './postStyle.css'
-
 
 function PostsList() {
     const posts = useSelector(state => state.posts)
+    const navigate = useNavigate()
+
     const renderedPosts = posts.map(post => {
         return (
             <div className="post-style" >  
@@ -18,6 +20,7 @@ function PostsList() {
         <div className="posts">
             <h1>Posts</h1>
             {renderedPosts}
+            <button onClick={() => navigate("/add-form")}>Add post</button>
         </div>
     );
 }

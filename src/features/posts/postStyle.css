@@ -1,5 +1,7 @@
 .posts{
     width: 60vw;
+    display: flex;
+    flex-direction: column;
 }
 .post-style{
     margin-top: 20px;
@@ -13,4 +15,8 @@
 }
 
 .post-style p{
+}
+
+.posts button{
+    margin: 10px auto;
 }

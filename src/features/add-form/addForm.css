@@ -1,0 +1,19 @@
+.add-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.add-form label{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.add-form textarea{
+    width: 400px;
+    height: 150px;
+}
+
+.add-form button{
+    margin: 10px auto;
+}
