@@ -6,9 +6,13 @@ function PostsList() {
     const posts = useSelector(state => state.posts)
     const navigate = useNavigate()
 
-    const renderedPosts = posts.map(post => {
+    const renderedPosts = posts.map((post, index) => {
         return (
-            <div className="post-style" >  
+            <div 
+                key={index} 
+                className="post-style" 
+                onClick={() => navigate(`/singlePostPage/${post.id}`, {id: post.id})}
+            >  
                 <h1>{post.title}</h1>
                 <p>{post.content.substring(0, 100)}</p>
             </div>

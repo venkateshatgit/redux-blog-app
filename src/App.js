@@ -3,6 +3,7 @@ import PostsList from './features/posts/postsList';
 import './App.css';
 import Welcome from './features/welcome/welcome';
 import AddForm from './features/add-form/addForm';
+import SinglePostPage from './features/posts/singlePost/singlePostpage';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path='/' element={<Welcome/>}/>
           <Route path='/posts' element={<PostsList/>}/>
           <Route path='/add-form' element={<AddForm/>}/>
+          <Route path='/singlePostPage/:id' element={<SinglePostPage/>}/>
         </Routes>
       </BrowserRouter>
     </div>
