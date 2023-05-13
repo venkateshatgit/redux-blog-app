@@ -11,7 +11,7 @@ function PostsList() {
             <div 
                 key={index} 
                 className="post-style" 
-                onClick={() => navigate(`/singlePostPage/${post.id}`, {id: post.id})}
+                onClick={() => navigate(`/editPostPage/${post.id}`, {id: post.id})}
             >  
                 <h1>{post.title}</h1>
                 <p>{post.content.substring(0, 100)}</p>

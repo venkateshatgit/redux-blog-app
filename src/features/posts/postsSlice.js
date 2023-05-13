@@ -14,10 +14,33 @@ const postsSlice = createSlice({
     reducers: {
         postAdd(state, action){
             state.unshift(action.payload)
+        },
+
+        postUpdate(state, action){
+            let newState = [...state]
+            newState.map((post, index) => {
+                if(post.id === action.payload.id){
+                    state[index] = action.payload
+                }
+            })
+        },
+
+        postDelete(state, action){
+            let newState = [...state]
+            newState.map((post, index) => {
+                if(post.id === action.payload.id){
+                    state.splice(index, 1)
+                }   
+            })
+
         }
     }
 })
 
 export default postsSlice.reducer;
-export const {postAdd} = postsSlice.actions;
+export const {
+    postAdd, 
+    postUpdate,
+    postDelete
+} = postsSlice.actions;
 

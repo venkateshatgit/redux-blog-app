@@ -8,10 +8,15 @@
     padding: 20px 10px;
     border: solid 1px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .post-style h1{
     margin: 0;
+}
+
+.post-style h1:hover{
+    color: rgb(165, 129, 196);
 }
 
 .post-style p{

@@ -4,6 +4,7 @@ import './App.css';
 import Welcome from './features/welcome/welcome';
 import AddForm from './features/add-form/addForm';
 import SinglePostPage from './features/posts/singlePost/singlePostpage';
+import EditPost from './features/posts/editPostPage/editPost';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path='/posts' element={<PostsList/>}/>
           <Route path='/add-form' element={<AddForm/>}/>
           <Route path='/singlePostPage/:id' element={<SinglePostPage/>}/>
+          <Route path='/editPostPage/:id' element={<EditPost/>}/>
         </Routes>
       </BrowserRouter>
     </div>

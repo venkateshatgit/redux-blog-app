@@ -8,7 +8,7 @@ function SinglePostPage() {
             post.id === params.id
     ))
 
-    return (  
+    return (
         <>
             <h1>Title: {post.title}</h1>
             <p>Content: {post.content}</p>
